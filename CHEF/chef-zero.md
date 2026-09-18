@@ -106,7 +106,6 @@ However, for local cookbook development, you usually do not need to start it sep
 * The recipe is idempotent: running it again should report that most resources are already up to date.
 * To remove Nginx later, change the resources to action :remove and action :stop, or uninstall it directly:
 
-
-    sudo apt remove nginx
+        sudo apt remove nginx
 
 For a production-like workflow, use a full Chef/Cinc server or Test Kitchen; Chef Zero is primarily intended for local development and testing
