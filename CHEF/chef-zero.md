@@ -101,7 +101,7 @@ It will print a URL such as:
 However, for local cookbook development, you usually do not need to start it separately. chef-client --local-mode starts and uses Chef Zero automatically.
 
 
-Important notes
+### Important notes
 Run the convergence with sudo because installing packages and managing services require root privileges.
 The recipe is idempotent: running it again should report that most resources are already up to date.
 To remove Nginx later, change the resources to action :remove and action :stop, or uninstall it directly:
