@@ -102,9 +102,9 @@ However, for local cookbook development, you usually do not need to start it sep
 
 
 ### Important notes
-Run the convergence with sudo because installing packages and managing services require root privileges.
-The recipe is idempotent: running it again should report that most resources are already up to date.
-To remove Nginx later, change the resources to action :remove and action :stop, or uninstall it directly:
+* Run the convergence with sudo because installing packages and managing services require root privileges.
+* The recipe is idempotent: running it again should report that most resources are already up to date.
+* To remove Nginx later, change the resources to action :remove and action :stop, or uninstall it directly:
 
 
     sudo apt remove nginx
